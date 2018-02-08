@@ -1,0 +1,27 @@
+<span class="sorter">
+    {% if direction == 'desc' %}&uarr;{% else %}&darr;{% endif %} Sort:
+
+    {% if order == 'created_at' %}
+        <a class="text-muted" href="?page={{page}}&order=created_at&direction={{direction}}">Date</a>
+    {% else %}
+        <a href="?page={{page}}&order=created_at&direction={{direction}}">Date</a>
+    {% endif %}
+
+    {% if order == 'email' %}
+        <a class="text-muted" href="?page={{page}}&order=email&direction={{direction}}">Email</a>
+    {% else %}
+        <a href="?page={{page}}&order=email&direction={{direction}}">Email</a>
+    {% endif %}
+
+    {% if order == 'name' %}
+        <a class="text-muted" href="?page={{page}}&order=name&direction={{direction}}">Name</a>
+    {% else %}
+        <a href="?page={{page}}&order=name&direction={{direction}}">Name</a>
+    {% endif %}
+
+    {% if order == 'is_done' %}
+        <a class="text-muted" href="?page={{page}}&order=is_done&direction={{direction}}">Status</a>
+    {% else %}
+        <a href="?page={{page}}&order=is_done&direction={{direction}}">Status</a>
+    {% endif %}
+</span>

@@ -1,0 +1,22 @@
+<div class="comment mb-2 row">
+    <div class="col-md-1 col-sm-2 text-center pr-1">
+        <a href=""><img class="mx-auto rounded-circle img-fluid" src="{{ task.image }}" alt="image"></a>
+    </div>
+    <div class="comment-content col-md-11 col-sm-10">
+        <h6 class="small comment-meta" style="position:relative;"><a href="#">{{ task.name|e }}</a>
+            <span class="text-muted">{{ task.email|e }}</span>
+            {% if task.is_done %}
+                <span class="badge badge-danger">Closed</span>
+            {% else %}
+                <span class="badge badge-success">Open</span>
+            {% endif %}
+            <span class="text-muted" style="right: 0px; position: absolute;">{{ task.created_at|date("F jS \\a\\t g:ia") }}</span>
+        </h6>
+        <div class="comment-body">
+            <p align="justify">
+                {{ task.content|e }}
+                <br>
+            </p>
+        </div>
+    </div>
+</div>

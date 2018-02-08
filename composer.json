@@ -1,0 +1,12 @@
+{
+    "require": {
+        "nikic/fast-route": "^1.2",
+        "aura/autoload": "^2.0",
+        "pimple/pimple": "^3.0",
+        "catfan/Medoo": "^1.5",
+        "respect/validation": "^1.1",
+        "twig/twig": "~2.0",
+        "verot/class.upload.php": "dev-master",
+        "Josantonius/Session": "^1.1"
+    }
+}
